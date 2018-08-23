@@ -36,6 +36,7 @@ LI8XX1111 | EGC | 3066020
 
 
 Assuming the .csv file is saved in the current working directory as IDfile.csv, this utility can be called from the command line as usual.
+This command will access lincs.ohsu.edu, download all of the ImageIDs in IDfile.csv, rescale them to 64x64 pixels, and save them to save\_dir
 
 ```bash
 python download_omero.py -s save_dir -i IDfile.csv -x 64 -y 64 -c 255 -o lincs.ohsu.edu
