@@ -45,7 +45,7 @@ conn = BlitzGateway(un, pw, host=args.o, port=4064)
 conn.connect()
 
 for imageID in df.ImageID:
-    print(imageID)
+    print('downloading', imageID)
     img = conn.getObject("Image", imageID)
     pixels = img.getPrimaryPixels()
     channels = []
