@@ -11,25 +11,18 @@ from omero.gateway import BlitzGateway
 
 
 parser = argparse.ArgumentParser(description='Download from OMERO server')
- 
 parser.add_argument('-s', type=str, default='images',
                     help='save directory')
-
 parser.add_argument('-i', type=str, default='imageIDs',
                     help='csv datafile with imageID column')
-
 parser.add_argument('-x', type=int, default=0,
                     help='save image width resolution')
-
 parser.add_argument('-y', type=int, default=0,
                     help='save image height resolution')
-
 parser.add_argument('-c', type=int, default=0,
                     help='save resolution (255 for 8 bit)')
-
 parser.add_argument('-o', type=str, default='lincs.ohsu.edu',
                     help='OMERO host')
-
 args = parser.parse_args()
 
 
